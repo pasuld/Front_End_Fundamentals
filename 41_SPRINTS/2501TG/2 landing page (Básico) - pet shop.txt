@@ -1,0 +1,92 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Tarefa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tarefa Pet Shop</h1>
+        <p>Seu parceiro de confiança para cuidados com animais</p>
+    </header>
+
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Banho e Tosa</li>
+            <li>Venda de Alimentos</li>
+            <li>Acessórios para Animais</li>
+        </ul>
+    </section>
+
+    <section class="about">
+        <h2>Sobre Nós</h2>
+      <p><mark>Tarefa Pet Shop</mark> é dedicado a fornecer os melhores cuidados para seus animais de estimação, com amor e carinho.</p>
+        <p>Endereço: Rua Tarefa Pet Shop, 000 - São Paulo, SP</p>
+        <p>Horário de Funcionamento: Segunda a Sexta, das 9h às 18h</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contato</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@tarefapetshop.com.br</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Tarefa Pet Shop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+	--------------------------
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.services, .about, .contact {
+    padding: 2em;
+    background-color: white;
+    margin: 2em 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4caf50;
+}
+
+footer {
+    background-color: #008000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .services, .about, .contact {
+        margin: 1em;
+    }
+}
+
+
