@@ -1,85 +1,68 @@
-/*Crie um slider básico usando o elemento <input> do tipo range.*/
+/* --- Estilos Gerais --- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+/* --- 1. SLIDER BÁSICO --- */
+.slider-basico {
+    width: 300px;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Slider Básico</title>
-  <style>
-    input[type="range"] {
-      width: 300px;
-    }
-  </style>
-</head>
-<body>
-  <input type="range" min="0" max="100" step="1" value="50">
-</body>
-</html>
+/* --- 2. SLIDER ESTILIZADO --- */
+/*  */
 
-/*Crie um slider estilizado com cores personalizadas.*/
+.slider-estilizado {
+    -webkit-appearance: none; /* Remove a aparência padrão do navegador */
+    appearance: none;
+    width: 300px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+}
 
+/* Estilo do Botão (Chrome, Safari, Edge, Opera) */
+.slider-estilizado::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Slider Estilizado</title>
-  <style>
-    input[type="range"] {
-      width: 300px;
-      height: 10px;
-      background-color: #ddd;
-      border-radius: 5px;
-      outline: none;
-    }
-    input[type="range"]::-webkit-slider-thumb {
-      appearance: none;
-      width: 20px;
-      height: 20px;
-      background-color: #007bff;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    input[type="range"]::-moz-range-thumb {
-      width: 20px;
-      height: 20px;
-      background-color: #007bff;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <input type="range" min="0" max="100" step="1" value="50">
-</body>
-</html>
+/* Estilo do Botão (Firefox) */
+.slider-estilizado::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
-/* Crie um slider personalizado com uma barra de progresso.*/
+/* Efeito ao passar o mouse no botão */
+.slider-estilizado::-webkit-slider-thumb:hover {
+    background: #0056b3;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Slider Personalizado</title>
-  <style>
-    .slider {
-      width: 300px;
-      height: 10px;
-      background-color: #ddd;
-      border-radius: 5px;
-    }
-    .progress {
-      height: 100%;
-      background-color: #007bff;
-      border-radius: 5px;
-      transition: width 0.3s ease;
-    }
-  </style>
-</head>
-<body>
-  <div class="slider">
-    <div class="progress" style="width: 50%;"></div>
-  </div>
-</body>
-</html>
+/* --- 3. BARRA DE PROGRESSO (DIVS) --- */
+.container-slider {
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Garante que o progresso não saia da borda arredondada */
+}
+
+.progresso {
+    height: 100%;
+    background-color: #28a745; /* Verde para diferenciar */
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}

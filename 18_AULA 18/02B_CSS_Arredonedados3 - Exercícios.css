@@ -1,69 +1,45 @@
-/*Centralize uma <div> horizontalmente usando o método margin: 0 auto;.*/
+/* --- Estilos de Base (Apenas para visualização) --- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Centralizar Div Horizontalmente</title>
-  <style>
-    .container {
-      width: 200px;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    Conteúdo da Div
-  </div>
-</body>
-</html>
+div {
+    background-color: #e0e0e0;
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+}
 
+/* --- EXERCÍCIO 1: margin: 0 auto --- 
+   Utilizado para centralizar o bloco horizontalmente. 
+   O elemento PRECISA de uma largura (width) definida. 
+*/
+.box-margin {
+    width: 200px;
+    margin: 0 auto; /* 0 em cima/baixo, auto nas laterais */
+}
 
-/*Centralize uma <div> vertical e horizontalmente usando display: flex e justify-content: center e align-items: center.*/
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Centralizar Div Vertical e Horizontalmente</title>
-  <style>
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-      height: 200px;
-      border: 1px solid black;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    Conteúdo da Div
-  </div>
-</body>
-</html>
+/* --- EXERCÍCIO 2: Flexbox --- 
+   Centraliza o CONTEÚDO (texto ou outras tags) que está dentro da div.
+*/
 
-/* Centralize uma <div> horizontalmente usando position: absolute e left: 50% em conjunto com transform: translateX(-50%).*/
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Centralizar Div Horizontalmente</title>
-  <style>
-    .container {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200px;
-      height: 200px;
-      border: 1px solid black;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    Conteúdo da Div
-  </div>
-</body>
-</html>
+.container-flex {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    width: 200px;
+    height: 200px;
+}
+
+/* --- EXERCÍCIO 3: Position Absolute + Transform --- 
+   Move o elemento para o meio da tela ou do elemento pai.
+*/
+
+.box-absolute {
+    position: absolute;
+    left: 50%;               /* Empurra a borda esquerda para o meio */
+    transform: translateX(-50%); /* Move 50% da largura da própria div de volta para a esquerda */
+    width: 200px;
+    height: 200px;
+}

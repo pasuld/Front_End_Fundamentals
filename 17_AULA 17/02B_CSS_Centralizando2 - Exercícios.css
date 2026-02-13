@@ -1,69 +1,43 @@
-/*Centralize uma <div> horizontalmente usando o método margin: 0 auto;.*/
+/* --- Estilos Gerais (Apenas para visualização) --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Centralizar Div Horizontalmente</title>
-  <style>
-    .container {
-      width: 200px;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    Conteúdo da Div
-  </div>
-</body>
-</html>
+div {
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+}
 
+/* --- MÉTODO 1: margin: 0 auto --- 
+   Funciona apenas horizontalmente em elementos com largura (width) definida.
+*/
+.centralizar-margin {
+    width: 200px;
+    margin: 0 auto;
+}
 
-/*Centralize uma <div> vertical e horizontalmente usando display: flex e justify-content: center e align-items: center.*/
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Centralizar Div Vertical e Horizontalmente</title>
-  <style>
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-      height: 200px;
-      border: 1px solid black;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    Conteúdo da Div
-  </div>
-</body>
-</html>
+/* --- MÉTODO 2: Flexbox --- 
+   O mais moderno. Centraliza horizontal e verticalmente o CONTEÚDO dentro dele.
+*/
+.container-flex {
+    display: flex;
+    justify-content: center; /* Centro horizontal */
+    align-items: center;     /* Centro vertical */
+    width: 200px;
+    height: 200px;
+}
 
-/* Centralize uma <div> horizontalmente usando position: absolute e left: 50% em conjunto com transform: translateX(-50%).*/
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Centralizar Div Horizontalmente</title>
-  <style>
-    .container {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200px;
-      height: 200px;
-      border: 1px solid black;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    Conteúdo da Div
-  </div>
-</body>
-</html>
+/* --- MÉTODO 3: Position Absolute + Transform --- 
+   Move o elemento em relação ao navegador ou ao pai. 
+   O transform corrige o ponto de ancoragem.
+*/
+.centralizar-absolute {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Move 50% da própria largura para a esquerda */
+    width: 200px;
+    height: 200px;
+}

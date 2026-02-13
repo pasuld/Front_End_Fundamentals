@@ -1,63 +1,24 @@
-/*Crie um parágrafo com texto em negrito.*/
+/* Configuração geral para a página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Texto em Negrito</title>
-  <style>
-    p {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <p>Este é um texto em negrito.</p>
-</body>
-</html>
+/* Diferentes pesos de fonte usando classes */
 
-/*Crie um cabeçalho <h1> com texto em fonte normal.*/
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Texto em Fonte Normal</title>
-  <style>
-    h1 {
-      font-weight: normal;
-    }
-  </style>
-</head>
-<body>
-  <h1>Este é um texto em fonte normal.</h1>
-</body>
-</html>
+.leve {
+    font-weight: 300; /* Mais fino que o normal */
+}
 
+.normal {
+    font-weight: normal; /* O mesmo que 400 */
+}
 
-/*Crie uma lista com itens de diferentes pesos de fonte.*/
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Lista com Pesos de Fonte</title>
-  <style>
-    li:nth-child(1) {
-      font-weight: normal;
-    }
-    li:nth-child(2) {
-      font-weight: bold;
-    }
-    li:nth-child(3) {
-      font-weight: 900;
-    }
-  </style>
-</head>
-<body>
-  <ul>
-    <li>Texto em fonte normal.</li>
-    <li>Texto em negrito.</li>
-    <li>Texto em fonte extra negrito.</li>
-  </ul>
-</body>
-</html>
+.negrito {
+    font-weight: bold; /* O mesmo que 700 */
+}
 
+.extra-negrito {
+    font-weight: 900; /* O nível máximo de espessura */
+}
