@@ -1,0 +1,140 @@
+# Vers-o-2---Day-Spa-Animal-Pet-Purple-Br-s
+Day Spa | Animal Pet Purple-Brás
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day Spa | Animal Pet Purple-Brás</title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+<body> 
+
+<button id="meuBotao" class="toggle">
+   🌙
+</button>
+<script src ="script.js"></script>
+
+
+<header> 
+    <div class="banner-container">
+        <img src="bannerroxo.png" class="banner-img" alt="Banner Pet Shop Purple">
+    </div>
+  
+<nav class="navbar">
+    <ul>
+    <li><a href="#cachorro">Cachorro</a></li>
+    <li><a href="#gato">Gato</a></li>
+    <li><a href="#outros-pets">Outros-Pets</a></li>
+    </ul>
+</nav>
+</header>
+
+        <main class="container-principal">
+<section class= "descricao">
+        <p><b>Para que o seu pet esteja sempre feliz, é essencial que ele esteja sempre limpinho e bem cuidado.Por isso, o Day SPA é uma excelente opção para você que deseja proporcionar o bem-estar completo do seu animalzinho.</b></p>
+        <p><b>O Day SPA para animais conta com momentos de beleza, como o banho e tosa, alinhados com momentos de diversão e relaxamento.Com foco total no bem-estar do seu pet, nós contamos com uma equipe qualificada para oferecer um Day SPA com todo o carinho e dedicação que o seu amigo merece!</b></p>
+</section>
+
+    <section class="servicos">    
+        
+    <div class="card">
+        <h2>Serviços para Cães</h2>
+        <p>Banho e Tosa para o seu dog</p>
+        <button class="btn-enviar">Saiba mais</button>
+
+    </div>  
+
+   <div class="card">
+        <h2>Estética para Gatos</h2>
+        <p>Espaço para o seu gatinho relaxar</p>
+        <button class="btn-enviar">Saiba mais</button>
+
+    </div> 
+
+    <div class="card">        
+        <h2>Pets Exóticos</h2>
+        <p>Cuidados especiais para coelhos e hamsters</p>
+        <button class="btn-enviar">Saiba mais</button>
+
+    </div> 
+   
+    </section>
+      
+<section class="produtos">
+    <h2>Produtos Pet</h2>
+    <p class="produtos-subtitulo">"Produtos para o seu pet"</p>
+
+    <div class="container-produtos">
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/214717/small/Ra%C3%A7%C3%A3o_Golden_Premier_Pet_Sele%C3%A7%C3%A3o_Natural_para_Gatos_Filhotes_3110246_3Kg_l.jpg?1770713157" width="200">
+            <h3>Alimento</h3>
+            <p>Golden</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/270262/small/Ra%C3%A7%C3%A3o_GranPlus_Menu_Carne_e_Arroz_para_C%C3%A3es_Filhotes_31021649_FRENTE.jpg?1771046304" width="200">
+            <h3>Alimento</h3>
+            <p>GranPlus</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/266081/small/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_C%C3%A3es_Filhotes_Carne_e_Arroz_-_15_Kg_3108200_1.jpg?1770970171" width="200">
+            <h3>Alimento</h3>
+            <p>Golden</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/291237/small/1_-_2024-09-30T171645.643.jpg?1771137544" width="200">
+            <h3>Diversão</h3>
+            <p>Mordedor</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/392819/small/Made_with_insMind-7899973923989_1.png?1769432929" width="200">
+            <h3>Diversão</h3>
+            <p>Brinquedo</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/373192/small/SBGY06639732567512-SKU-FSB008-1.jpg20250923-8-1fjw5cx.jpg?1758651202" width="200">
+            <h3>Diversão</h3>
+            <p>Bolinha</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/274696/small/31027532162_Porta_Ra%C3%A7%C3%A3o_Kroco_Pet_Food_Preto_-_15_Kg_%281%29.jpg?1771053421" width="200">
+            <h3>Acessórios</h3>
+            <p>Porta Ração</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/267613/small/31027523073_Porta_Petisco_Snoopy_Preto_-_3600_mL.jpg?1771041941" width="200">
+            <h3>Acessórios</h3>
+            <p>Porta Petisco</p>
+        </div>
+
+        <div class="item">
+            <img src="https://www.petlove.com.br/images/products/277193/small/1937950_Bebedouro_Furac%C3%A3o_Pet_Pl%C3%A1stico_Pop_Rosa_Pelos_Longos_-_1_L.jpg?1771057403" width="200">
+            <h3>Acessórios</h3>
+            <p>Bebedouro</p>
+        </div>
+ 
+</div>
+
+</section> 
+</main>
+          
+
+ <footer class="rodape">
+
+    <p><b>Animal Pet Purple:</b> Rua Monsenhor Andrade, 298 - Brás | Seg-Sex: 08h-18h / Sáb: 09h-14h</p>
+    <p><b>(11) 9999-9999</b></p>
+
+</footer>
+
+
+
