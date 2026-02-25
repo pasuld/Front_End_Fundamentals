@@ -1,0 +1,111 @@
+body{
+    margin: 0%;
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+header{
+    background: url(https://ejeq.com.br/wp-content/uploads/2022/05/391.png) center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0px;
+}
+
+header h1{
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.B1{
+    background-color: rgb(237, 101, 16);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.racoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+img{
+    padding-top: 30px;
+    width: 135px;
+}
+
+.card{
+    background-color:  rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.card:hover{
+    background-color: rgb(36, 36, 149);
+    transform: translateY(-20px);
+}
+
+.card:hover p{
+    color: aqua;
+}
+
+
+.img2{
+    width: 140px;
+}
+
+
+
+.img3{
+    width: 135px;
+}
+
+
+
+.img4{
+    width: 160px;
+}
+
+
+
+.img5{
+    width: 135px;
+}
+
+
+
+.img6{
+    width: 135px;
+}
+
+.img7{
+    width: 145px;
+}
+
+.img8{
+    width: 115px;
+}
+
+.img9{
+    width: 170px;
+}
+
+.img11{
+    width: 180px;
+}

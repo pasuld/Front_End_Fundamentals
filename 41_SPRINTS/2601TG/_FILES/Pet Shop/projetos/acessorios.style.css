@@ -1,0 +1,125 @@
+body{
+    background-color: aliceblue;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background: url(https://img.freepik.com/fotos-gratis/conceito-de-natureza-morta-de-acessorios-para-animais-de-estimacao-com-objetos-coloridos_23-2148949578.jpg?semt=ais_user_personalization&w=740&q=80) center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0px;
+}
+
+header h1{
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+.B1{
+    background-color: rgb(237, 101, 16);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+}
+
+.acessorios{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color:  rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.6s ease-in-out;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: rgb(36, 36, 149);
+    transform: translateY(-20px);
+}
+
+.card:hover p{
+    color: aqua;
+}
+
+.img1{
+    width: 170px;
+    padding-top: 30px;
+}
+
+
+
+.img2{
+    width: 150px;
+    padding-top: 30px;
+}
+
+
+
+.img3{
+    width: 120px;
+    padding-top: 30px;
+}
+
+
+
+.img4{
+    width: 105px;
+    padding-top: 30px;
+}
+
+.img5{
+    width: 150px;
+    padding-top: 30px;
+}
+
+.img6{
+    width: 150px;
+    padding-top: 30px;
+}
+
+.img7{
+    width: 200px;
+    padding-top: 30px;
+}
+
+.img8{
+    width: 220px;
+    padding-top: 30px;
+}
+
+.img9{
+    width: 220px;
+    padding-top: 30px;
+}
+
+.img10{
+    width: 110px;
+    padding-top: 30px;
+}
+
+.img11{
+    width: 150px;
+    padding-top: 30px;
+}
+
+.img12{
+    width: 200px;
+    padding-top: 30px;
+}
