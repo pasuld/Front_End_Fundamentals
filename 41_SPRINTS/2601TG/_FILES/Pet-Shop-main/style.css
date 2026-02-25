@@ -1,0 +1,93 @@
+body {
+    background-color: #67dca0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+img {
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+div {
+    background-color: #126d50;
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+input {
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+label {
+    font-size: 25px;
+    margin: 40px;
+
+}
+
+button {
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+    background-color: #67dca0;
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8ccde9;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+.links{
+    display: flex;
+    gap: 105px;
+    align-items: center;
+    margin: 15px;
+}
+
+.recuperar{
+    color: grey;
+    font-size: 15px;
+}
+
+    
+

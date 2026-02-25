@@ -1,0 +1,109 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #cfffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    color: #11426a;
+    background-color: #acdaf1;
+    align-items: center;
+    justify-content: center;
+}
+
+.pata {
+    width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-right: -130px;
+}
+
+header h1 {
+    font-size: 80px;
+    margin: 0%;
+    padding: 0%;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 26px;
+    color: black;
+    padding: 35px;
+}
+
+.titulo h1 {
+    margin-bottom: 5px;
+    font-weight: 750;
+}
+
+.titulo p {
+    font-size: 16px;
+    margin-top: 0%;
+
+}
+
+.dados {
+    background-color: #11426a;
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.dados h3 {
+    text-align: center;
+    font-size: 23px;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+.dados input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.dados label {
+    font-size: 18px;
+    margin: 45px;
+    font-weight: 250;
+    color: aliceblue;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 12px;
+    background-color: #cfffff;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+}
