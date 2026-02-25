@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+}
+
+/* Título */
+.container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label */
+.container label {
+    display: grid;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Input */
+.container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Efeito ao focar no input */
+.container input:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Botão */
+#startBtn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4e73df;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover no botão */
+#startBtn:hover {
+    background-color: #2e59d9;
+    transform: scale(1.05);
+}
+
+#resetBtn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4e73df;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#resetBtn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+}
