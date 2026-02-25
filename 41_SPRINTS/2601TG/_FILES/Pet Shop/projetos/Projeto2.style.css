@@ -1,0 +1,220 @@
+body{
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+    color: #333;
+}
+
+header{
+    background: url(https://images.unsplash.com/photo-1548199973-03cce0bbc87b) center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0px;
+}
+header h1{
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+header p{
+    font-size: 1.9em;
+    padding-bottom: 20px;
+}
+
+.B1{
+    background-color: rgb(237, 101, 16);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section{
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.Servicos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card1{
+    background-color: rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    padding: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+
+
+.card1:hover{
+    background-color: rgb(36, 36, 149);
+    transform: translateY(-20px);
+}
+
+.card1:hover h3{
+    color: aqua;
+}
+
+.card1:hover p{
+    color: aqua;
+}
+
+.card2{
+    background-color: rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    padding: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+.card2:hover{
+    background-color: rgb(36, 36, 149);
+    transform: translateY(-20px);
+}
+
+.card2:hover h3{
+    color: aqua;
+}
+
+.card2:hover p{
+    color: aqua;
+}
+
+.card3{
+    background-color: rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    padding: 25px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2)
+}
+
+.card3:hover{
+    background-color: rgb(36, 36, 149);
+    transform: translateY(-20px);
+}
+
+.card3:hover h3{
+    color: aqua;
+}
+
+.card3:hover p{
+    color: aqua;
+}
+
+.escolha{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card4{
+    background-color: rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card5{
+    background-color: rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card6{
+    background-color: rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card7{
+    background-color: rgb(215, 109, 44);
+    color: white;
+    width: 300px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    
+}
+
+img{
+    border-radius: 20px;
+    width: 100%;   
+}
+
+.P{
+    color:  rgb(215, 109, 44);
+}
+
+.contato{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(237, 101, 16) ;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+    
+}
+
+.imagem-circular {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+
+
