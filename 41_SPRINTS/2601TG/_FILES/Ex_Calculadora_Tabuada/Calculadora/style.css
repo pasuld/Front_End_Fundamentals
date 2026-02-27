@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centralizar tudo */
+body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+/* Caixa da calculadora */
+.calculadora {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Título */
+.calculadora h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+.calculadora input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.calculadora input:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Botões */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.botoes button {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4e73df;
+    color: white;
+    transition: 0.3s;
+}
+
+.botoes button:hover {
+    background-color: #2e59d9;
+    transform: scale(1.05);
+}
+
+/* Resultado */
+#resultado {
+    color: #013a25;
+    font-weight: bold;
+    margin-top: 10px;
+}
