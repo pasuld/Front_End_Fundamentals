@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Termômetro Digital</title>
+    <link rel="stylesheet" href="styletermo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Termômetro Digital</h1>
+
+        <div class="input-area">
+            <input type="number" id="temperatura" placeholder="Digite a temperatura °C">
+            <select id="estacao">
+                <option value="">Selecione a estação</option>
+                <option value="verao">Verão</option>
+                <option value="outono">Outono</option>
+                <option value="inverno">Inverno</option>
+                <option value="primavera">Primavera</option>
+            </select>
+            <button id="verificar">Verificar</button>
+        </div>
+
+        <div class="resultado">
+            <p id="classificacao"></p>
+            <p id="mensagemEstacao"></p>
+        </div>
+    </div>
+    <script src="script11.js"></script>
+
+</body>
+
+</html>
