@@ -1,0 +1,43 @@
+body{
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.container{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px 100px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input{
+    width: 90%;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.botao{
+    background-color: bisque;
+    width: 150px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
