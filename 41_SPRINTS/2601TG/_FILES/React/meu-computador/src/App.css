@@ -40,21 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-.botao-img{
-  justify-self: center;
-  background-image: radial-gradient(#00ff00, #0000);
-  border: #7a7a7a 10px solid;
-  box-shadow: 5px 5px 10px #0000007b;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}
-.botao-img-alt{
-  justify-self: center;
-  background-image: radial-gradient(#ff0000, #0000);
-  border: #7a7a7a 10px solid;
-  box-shadow: 5px 5px 10px #0000007b;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}

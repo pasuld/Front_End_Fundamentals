@@ -4,45 +4,30 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const botaoImg = document.getElementById("botao");
-  const message = document.getElementById("mensagem");
-
-  const [count, setCount] = useState(1);
-
-  function atualizarContador() {
-    setCount((count) => count + 1);
-
-    if(count % 2 !== 0){
-      botaoImg.classList.remove("botao-img");
-      botaoImg.classList.add("botao-img-alt");
-      message.textContent = "Desligado";
-      return;
-    }
-    else if(count % 2 === 0){
-      botaoImg.classList.remove("botao-img-alt");
-      botaoImg.classList.add("botao-img");
-      message.textContent = "Ligado";
-      return;
-    }
-    else{
-      alert("deu pau");
-      return;
-    }
-  };
+  const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <h1>Controle de Equipamento</h1>
-        <p>Painel de Operação do Torno CNC</p>
-        <div class="botao-img" id="botao"></div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
+      <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={atualizarContador}>
-          Ligar/Desligar
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
         </button>
-        <p id="mensagem"></p>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
       </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </>
   )
 }
