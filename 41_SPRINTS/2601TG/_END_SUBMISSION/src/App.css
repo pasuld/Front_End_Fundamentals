@@ -1,42 +1,267 @@
-#root {
-  max-width: 1280px;
+/* ==========================================================
+   1. DEFINIÇÃO DE CORES E GLOBAL 
+   ========================================================== */
+:root {
+  --preto-fosco: #1a1a1a;
+  --cinza-claro: #f8f9fa;
+  --azul-neon: #00d4ff;
+  --branco: #ffffff;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--cinza-claro);
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landing-page {
+  width: 100vw; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px; 
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+}
+
+/* ==========================================================
+   2. TELA DE LOGIN BELENZINHO LOGIN
+   ========================================================== */
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--preto-fosco);
+  padding: 20px;
+}
+
+.form-container {
+  background: white;
+  padding: 30px; 
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 360px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.form-container h2 {
+  color: var(--preto-fosco);
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--azul-neon);
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.btn-login {
+  background-color: var(--azul-neon);
+  color: var(--preto-fosco);
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.card {
-  padding: 2em;
+/* ==========================================================
+   3. HEADER (CABEÇALHO)
+   ========================================================== */
+.header {
+  background-color: var(--preto-fosco);
+  color: white;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-.read-the-docs {
-  color: #888;
+.logo-texto {
+  font-weight: bold;
+  color: var(--azul-neon);
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+/* ==========================================================
+   4. BANNER VIP
+   ========================================================== */
+.vip-banner {
+  width: 100%;
+  margin: 20px 0;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.vip-img {
+  width: 100%;
+  height: 350px; 
+  object-fit: cover;
+}
+
+.vip-text {
+  flex: 1;
+  padding: 30px;
+}
+
+/* ==========================================================
+   5. GALERIA DE SERVIÇOS (CARDS)
+   ========================================================== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+  width: 100%; 
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.item-info {
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+  justify-content: space-between;
+}
+
+.descricao-servico {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 5px 0 10px 0;  
+  /* Força o texto a ficar em apenas UMA linha */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Coloca os ... se o texto for maior que o card */  
+  /* Altura pequena e fixa */
+  height: 1.2em; 
+  display: block;
+}
+
+.preco {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.btn-venda {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-venda:hover {
+  background-color: #e2e6ea;
+  border-color: #adb5bd;
+}
+
+/* ==========================================================
+   6. ADMIN PANEL E TABELA
+   ========================================================== */
+.admin-panel {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.tabela-admin {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabela-admin th, .tabela-admin td {
+  padding: 15px; 
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* ==========================================================
+   7. WHATSAPP FLUTUANTE
+   ========================================================== */
+.btn-whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 55px; 
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  border: none;
+  cursor: pointer;
+}
+
+/* ==========================================================
+   8. RODAPÉ
+   ========================================================== */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
 }
