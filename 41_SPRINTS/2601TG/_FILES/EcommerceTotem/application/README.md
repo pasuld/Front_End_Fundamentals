@@ -1,4 +1,12 @@
-# React + Vite
+# Projeto usando React + Vite + Tailwind
+
+## Informações para Login: 
+Acesso para Admin use:
+  - email: admin@admin.com
+  - senha: 123
+Acesso para Cliente:
+  - email: cliente@cliente.com
+  - senha: 123 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
