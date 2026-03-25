@@ -9,6 +9,7 @@ This repository is a comprehensive collection of journey through Front-End devel
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![SENAI](https://img.shields.io/badge/Formação-SENAI-red?style=flat-square&logo=gitbook&logoColor=white)
 
 ## Technical Skills & Features
 
@@ -49,3 +50,5 @@ Select your class folder to explore the individual repositories:
 | :--- | :--- | :--- |
 | **2501TG** | Class 2501 Projects | [Explore](./41_SPRINTS/2501TG) |
 | **2601TG** | Class 2601 Projects | [Explore](./41_SPRINTS/2601TG) |
+
+This repository is for educational purposes
