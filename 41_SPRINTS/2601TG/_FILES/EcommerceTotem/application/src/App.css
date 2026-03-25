@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4A2C2A;
+  --color-secondary: #D9AF85;
+  --color-accent: #68E3D1;
+}
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Times New Roman', Times, serif, Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  background-color: #4A2C2A;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+.logo-text{
+  color: #D9AF85;
+  font-size: 50px;
+  margin: 20px;
+  margin-top: 10%;
+}
+@media (max-width: 768px){
+  body{
+    max-width: 100%;
+    border: none;
+    flex-direction: column;
+  }
+}
+p{
+  color: #4A2C2A;
+  font-size: 20px;
+}
+
+
+/* Conteudo da Aba de Login */
+h2{
+  color: #4A2C2A;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #d9af85b2;
+  
+  height: 50vh;
+  width: 50%;
+  padding: 5%;
+  margin: auto;
+  border-radius: 30px;
+}
+.login-title{
+  text-wrap: nowrap;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+label{
+  color: #4A2C2A;
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+input{
+  background-color: #cacaca;
+  color: #3B1F1F;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #3B1F1F;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+input:focus{
+  outline: none;
+  border-color: #4A2C2A;
+  border: 2px solid #000000;
+  box-shadow: 0 0 10px #4A2C2A;
+}
+.login-button, .logout-button{
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #4A2C2A;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.login-button:hover{
+  background-color: #3B1F1F;
+}
+
+.section-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  margin: 0;
+  width: 100%;
+  max-height: max-content;
+  
+}
