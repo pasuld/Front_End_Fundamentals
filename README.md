@@ -6,7 +6,6 @@ This repository is a comprehensive collection of journey through Front-End devel
 
 <p align="center">
   <img src="https://img.shields.io/badge/Education SENAI-grey?style=for-the-badge&logo=gitbook&logoColor=white" />
-  <img src="https://img.shields.io/badge/SENAI-E34F26?style=for-the-badge&logo=gitbook&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
