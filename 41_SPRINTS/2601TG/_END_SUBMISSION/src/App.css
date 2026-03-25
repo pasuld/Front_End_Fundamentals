@@ -1,14 +1,7 @@
 /* ==========================================================
    1. DEFINIÇÃO DE CORES E GLOBAL 
    ========================================================== */
-:root {
-  --preto-fosco: #1a1a1a;
-  --cinza-claro: #f8f9fa;
-  --azul-neon: #00d4ff;
-  --branco: #ffffff;
-}
-
-body, html {
+.body, html {
   margin: 0;
   padding: 0;
   width: 100%;
