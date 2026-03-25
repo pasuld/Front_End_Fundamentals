@@ -1,0 +1,57 @@
+body {
+    background: url(https://tribunademinas.com.br/colunas/maistendencias/wp-content/uploads/2025/01/Boticario-e-Natura-deram-adeus-aos-perfumes-queridinhos.webp) center/cover no-repeat;
+    padding: 100px 0px;
+}
+
+.titulo-body {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.container  {
+    background-color: white;
+    width: 600px;
+    padding: 80px 50px;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+a {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.botao {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: bisque;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}

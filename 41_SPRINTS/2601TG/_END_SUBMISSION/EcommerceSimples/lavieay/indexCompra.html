@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compra - La Vie A&Y</title>
+    <link rel="stylesheet" href="styleLoja.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h3 class="tituloCabecalho">La Vie A&Y</h3>
+    </header>
+
+    <main class="pagina-compra">
+      <section class="resumo-compra">
+        <h1>Resumo da Compra</h1>
+        <div id="lista-compra"></div>
+        <h2 id="total-compra"></h2>
+      </section>
+
+      <section class="dados-compra">
+        <h2>Dados para entrega</h2>
+
+        <form id="form-compra">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" placeholder="Digite seu nome" />
+
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" placeholder="Digite seu endereço" />
+
+          <label for="numero">Número</label>
+          <input type="text" id="numero" placeholder="Número da casa" />
+
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" placeholder="Digite seu bairro" />
+
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" placeholder="Digite sua cidade" />
+
+          <label for="pagamento">Forma de pagamento</label>
+          <select id="pagamento">
+            <option value="">Selecione</option>
+            <option>Pix</option>
+            <option>Cartão de Crédito</option>
+            <option>Boleto</option>
+          </select>
+
+          <button type="button" id="btn-finalizar-compra">
+            Finalizar compra
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <div id="alerta-custom" class="alerta">
+      <div class="alerta-box">
+        <p id="alerta-texto"></p>
+        <button onclick="fecharAlerta()">OK</button>
+      </div>
+    </div>
+
+    <script src="compra.js"></script>
+  </body>
+</html>

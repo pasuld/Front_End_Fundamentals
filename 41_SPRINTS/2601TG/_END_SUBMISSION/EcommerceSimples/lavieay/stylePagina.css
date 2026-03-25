@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.tituloCabecalho {
+  font-size: 28px;
+  color: #7a1f7a;
+  white-space: nowrap;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.iconesCabecalho {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.iconesCabecalho a {
+  text-decoration: none;
+  color: black;
+}
+
+.iconesCabecalho img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+img {
+  width: 23px;
+}
+
+.logincabecalho {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid black;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.hero {
+  background-image: url("imagens/maos.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.conteudo h1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.conteudo p {
+  font-size: 18px;
+  color: white;
+  max-width: 700px;
+  margin-bottom: 25px;
+  font-weight: 100px;
+}
+
+.hero a {
+  text-decoration: none;
+  background-color: white;
+  color: purple;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin: 5px;
+  display: inline-block;
+  display: flex;
+}
+
+.nossosProdutos {
+  padding: 80px 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.nossosProdutos h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.nossosProdutos p {
+  font-size: 20px;
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+.cardsCategorias {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cardCategoria {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  width: 500px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cardCategoria:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+
+  background-color: #f5f5f5;
+}
+
+.cardCategoria img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.cardCategoria h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.cardCategoria p {
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sobreNos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+  padding: 80px 120px;
+  background-color: #f5f5f5;
+}
+
+.textoSobre {
+  flex: 1;
+}
+
+.textoSobre h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.textoSobre p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.imagemSobre {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagemSobre img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 18px;
+}
+
+.contatos {
+  background-color: #b800ff;
+  padding: 100px;
+  text-align: center;
+}
+
+.contatos h2 {
+  color: white;
+  margin-bottom: -20px;
+  font-size: 40px;
+}
+
+.contatos p {
+  color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.contatos a {
+  border: none;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  color: #b800ff;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contatos a:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.rodape {
+  background: linear-gradient(to right, #06142b, #081a38);
+  padding: 50px 20px;
+}
+
+.container-rodape {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.coluna-rodape {
+  flex: 1;
+  min-width: 220px;
+}
+
+.coluna-rodape h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.coluna-rodape p,
+.coluna-rodape a {
+  color: #bfc7d5;
+  font-size: 18px;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.coluna-rodape ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coluna-rodape ul li {
+  margin-bottom: 10px;
+}
+
+.coluna-rodape a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .tituloCabecalho {
+    font-size: 22px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 15px;
+  }
+
+  .iconesCabecalho {
+    gap: 10px;
+  }
+
+  .logincabecalho {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .conteudo h1 {
+    font-size: 32px;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .hero {
+    min-height: 350px;
+  }
+
+  .hero a {
+    width: auto;
+    max-width: none;
+    flex-direction: row;
+  }
+
+  .cardsCategorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardCategoria {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .sobreNos {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .textoSobre {
+    width: 100%;
+  }
+
+  .textoSobre h2 {
+    font-size: 36px;
+  }
+
+  .textoSobre p {
+    font-size: 15px;
+  }
+
+  .imagemSobre {
+    width: 100%;
+  }
+
+  .imagemSobre img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contatos {
+    padding: 60px 20px;
+  }
+
+  .contatos h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .contatos p {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .contatos a {
+    font-size: 16px;
+    padding: 14px 22px;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .rodape {
+  background-color: #021a3a;
+  padding: 60px 20px;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.rodape-coluna {
+  flex: 1;
+}
+
+.rodape-coluna h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.rodape-coluna p,
+.rodape-coluna li,
+.rodape-coluna a {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.rodape-links,
+.rodape-contato {
+  list-style: none;
+  padding: 0;
+}
+}

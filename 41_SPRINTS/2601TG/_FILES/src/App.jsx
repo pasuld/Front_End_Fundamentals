@@ -1,49 +1,35 @@
-import { useState } from "react";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
 
-function App (){
-  const[medida, setMedida] = useState(0);
+function App() {
+  const [count, setCount] = useState(0)
 
-
-  const valorAlvo = 50.0;
-  const tolerancia = 0.5;
-
-  let mensagemStatus;
-  let classeVisual;
-
-  if(medida === 0){
-    mensagemStatus = "Aguardando leitura do paquimetro";
-    classeVisual = "cinza";
-  } else if(medida >=(valorAlvo - tolerancia) && medida <= (valorAlvo + tolerancia)){
-    mensagemStatus = `Aprovada: ${medida}mm está dentro da tolerancia`;
-    classeVisual = "verde";
-  }else{
-    mensagemStatus = `Reprovado: ${medida}mm está fora dos limites`;
-    classeVisual = "vermelho";
-  }
-
-  return(
-    <div className="painel">
-      <h2>Controle de Qualidade 1.0</h2>
-      <p>Peça: Pino de Retenção</p>
-      <hr />
-
-      <div className="input-area">
-        <label>Insira a medida em (mm)</label>
-        <input 
-          type="number" 
-          step="0.01" 
-          onChange={(e) => setMedida(parseFloat(e.target.value) || 0)} 
-        />
+  return (
+    <>
+      <div>
+         <a href="https://www.planoeplano.com.br" target="_blank">
+          <img src= "https://www.planoeplano.com.br/estatico/2023/09/28/14/41/8e7f75592be9b230f218731596f8e80b2d952894.webp" className="logo" alt = "Apartamento" />
+        </a>  
+        <a href="https://www.catagua.com.br" target="_blank">
+          <img src="https://i0.wp.com/catagua.com.br/wp-content/uploads/2024/02/fachada-diurna.jpg?resize=1024%2C576&ssl=1"className="logo" alt="Casa" />
+        </a>    
+     </div>
+      <h1>Apartamento + Casa</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
       </div>
-      <div className={`resultado ${classeVisual}`}>
-        {mensagemStatus}
-      </div>
-      <p style={{marginTop: '20px', fontSize: '0.8rem', color: '#888'}}>
-        Alvo: {valorAlvo}mm | Limite 49.5mm a 50.5mm
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
       </p>
-    </div>
+    </>
   )
 }
 
-export default App;
+export default App

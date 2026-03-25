@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jogo da Adivinhação</title>
-<link rel="stylesheet" href="styleSorteio.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorteio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
 
-<div class="container">
-    <h1>Adivinhe o Número</h1>
-    <input type="number" id="guessInput" placeholder="Digite um número de 1 a 20">
-    <button id="guessBtn">Enviar</button>
-    <div id="message"></div>
+    <div class="container">
+     <h2>Sorteio Aleatório</h2>
+         
+     <div class="form-group">
+<label for="campoNumber">Digite um número para iniciar</label>
+<input type="number" id="camponumber"placeholder="Digite um número">
+
 </div>
 
-<script src="script10.js"></script>
-</body>
-</html>
+<button id="guessBtn">Mostrar número</button> 
+<button id="resetBtn">Resetar</button>
+
+<p id="resultado"></p>
+
+
+     </div>
+
+     <script src= "sorteio.js"></script>
+     </body>
+     </html> 

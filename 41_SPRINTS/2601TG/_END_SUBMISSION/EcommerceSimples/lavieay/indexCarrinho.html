@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho - La Vie A&Y</title>
+    <link rel="stylesheet" href="styleLoja.css" />
+    <link rel="icon" type="image/png" href="imagens/sla.png" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h3 class="tituloCabecalho">La Vie A&Y</h3>
+
+      <nav class="menu">
+        <a href="indexPagina.html#inicio">Inicio</a>
+        <a href="indexPagina.html#produtos">Produto</a>
+        <a href="indexPagina.html#sobre">Sobre</a>
+        <a href="indexPagina.html#contato">Contato</a>
+        <a href="indexLacos.html#produtosLacos">Laços</a>
+        <a href="indexTercos.html#produtosTercos">Terços</a>
+      </nav>
+    </header>
+
+    <main class="loja-produtos">
+      <h1>Seu Carrinho</h1>
+
+      <div id="carrinho-container"></div>
+
+      <h2 id="total"></h2>
+
+      <div class="acoes-carrinho">
+        <a href="indexPagina.html" class="btn-voltar-comprando">
+          Continuar comprando
+        </a>
+
+        <a href="#" class="btn-continuar-compra" onclick="irParaCompra()">
+          Continuar compra
+        </a>
+      </div>
+    </main>
+
+    <div id="alerta-custom" class="alerta">
+      <div class="alerta-box">
+        <p id="alerta-texto"></p>
+        <button onclick="fecharAlerta()">OK</button>
+      </div>
+    </div>
+
+    <script src="carrinho.js"></script>
+  </body>
+</html>

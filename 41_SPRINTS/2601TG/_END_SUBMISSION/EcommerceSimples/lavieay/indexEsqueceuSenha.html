@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar Senha - La Vie A&Y</title>
+    <link rel="stylesheet" href="styleEsqueceuSenha.css" />
+    <link rel="icon" type="image/png" href="imagens/sla.png" />
+  </head>
+  <body>
+    <main class="tela-recuperar">
+      <section class="container-recuperar">
+        <img src="imagens/nome_login.png" alt="La Vie A&Y" class="logo" />
+
+        <h2>Recuperar Senha</h2>
+
+        <p>Digite seu e-mail para recuperar sua senha.</p>
+
+        <input type="email" id="email" placeholder="✉️ Seu e-mail" />
+
+        <button class="botao">Enviar link</button>
+      </section>
+    </main>
+
+    <div id="alerta-custom" class="alerta">
+      <div class="alerta-box">
+        <p id="alerta-texto"></p>
+        <button onclick="fecharAlerta()">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
