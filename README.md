@@ -1,6 +1,8 @@
-# 🌐 Front-End Development - Fundamentals
+<p align="center">
+  <h1 align="center">🌐 Front-End Development - Fundamentals</h1>
+</p>
 
-This repository is a comprehensive collection of my journey through Front-End development, covering everything from core fundamentals (HTML5, CSS3, JavaScript) to modern framework implementations with React JS. 
+This repository is a comprehensive collection of journey through Front-End development, covering everything from core fundamentals (HTML5, CSS3, JavaScript) to modern framework implementations with React JS. 
 
 The projects here follow the professional standards of the **SENAI Front-End Developer** certification, focusing on usability, accessibility, and clean code.
 
